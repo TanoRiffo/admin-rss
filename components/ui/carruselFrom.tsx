@@ -193,6 +193,8 @@ export const CarouselForm: React.FC<CarouselFormProps> = ({ initialData, onSave,
     onSave(carouselToSave);
   };
 
+  console.log("CARDS:", cards)
+
   return (
     <div style={carouselFormStyles.formContainer}>
       <h2>{initialData ? 'Editar Carrusel' : 'Agregar Nuevo Carrusel'}</h2>

@@ -76,7 +76,7 @@ const cardFormStyles: Record<string, React.CSSProperties> = {
 
 export const CardForm: React.FC<CardFormProps> = ({ initialData, onSave, onCancel }) => {
   const [formData, setFormData] = useState<CardData>(initialData ? initialData : {
-    id: Date.now().toString(),
+    id: crypto.randomUUID(),
     type: 'youtube',
     title: '',
     imageUrl: '',
